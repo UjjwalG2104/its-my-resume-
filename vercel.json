@@ -4,11 +4,12 @@
   "outputDirectory": ".",
   "routes": [
     { "src": "/(.*\\.(css|js|png|jpg|jpeg|svg|gif|ico|json|pdf))", "headers": { "cache-control": "public, max-age=31536000, immutable" }, "dest": "/$1" },
-    { "src": "^/index\\.html$", "dest": "/index.html" },
-    { "src": "^/landing\\.html$", "dest": "/landing.html" },
-    { "src": "^/home$", "dest": "/index.html" },
-    { "src": "^/$", "dest": "/landing.html" },
-    { "src": "^/index$", "dest": "/index.html" },
-    { "src": "^/landing$", "dest": "/landing.html" }
+    { "src": "^/index\\.html$", "dest": "index.html" },
+    { "src": "^/landing\\.html$", "dest": "landing.html" },
+    { "src": "^/home$", "dest": "index.html" },
+    { "src": "^/$", "dest": "landing.html" },
+    { "src": "^/index$", "dest": "index.html" },
+    { "src": "^/landing$", "dest": "landing.html" }
   ]
 }
+
